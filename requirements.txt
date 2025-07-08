@@ -1,0 +1,5 @@
+flet
+bcrypt
+PyJWT
+pytest
+mysql-connector-python
