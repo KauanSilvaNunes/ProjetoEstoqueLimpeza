@@ -25,18 +25,18 @@ git clone  https://github.com/KauanSilvaNunes/ProjetoEstoqueLimpeza
 cd ProjetoEstoqueLimpeza
 
 
-2. Crie um ambiente virtual
+### 2. Crie um ambiente virtual
 python -m venv venv
 
 Ative o ambiente virtual:
 
 venv\Scripts\activate
 
-3. Instale as dependências
+### 3. Instale as dependências
 
 pip install -r requirements.txt
 
-4. Crie o arquivo .env
+### 4. Crie o arquivo .env
 Na raiz do projeto, crie um arquivo chamado .env com o seguinte conteúdo (ajuste conforme seu MySQL local/XAMPP):
 
 DB_HOST=localhost
