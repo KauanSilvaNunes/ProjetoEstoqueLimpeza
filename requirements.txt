@@ -3,3 +3,4 @@ bcrypt
 PyJWT
 pytest
 mysql-connector-python
+python-dotenv
