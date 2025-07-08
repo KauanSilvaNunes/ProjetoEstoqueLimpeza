@@ -1,6 +1,6 @@
 from flet import*
 from main.constructors.constructorLogin import constructorLogin
-
+from main.constructors.constructorMenu import constructorMenu
 
 
 def main(page:Page):
@@ -18,11 +18,12 @@ def main(page:Page):
     def changeRoute(route):
         page.views.clear()
         if page.route == "/":
-            page.views.append(constructorLogin)
+            page.views.append(constructorLogin(page=page))
         elif page.route=="/home":
-            page.views.append(telainicial)
+            page.views.append(constructorMenu())
 
         page.update()
+
     page.on_route_change = changeRoute
     page.go(page.route)
 

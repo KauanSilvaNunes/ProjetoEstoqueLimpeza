@@ -2,12 +2,12 @@ from flet import *
 from flet.core.alignment import center
 from utils.cores import Cores
 
-class TelaTeste(View):
+class ViewMenu(View):
 
     def __init__(self):
         super().__init__()
 
-        self.route=("/teste")
+        self.route=("/home")
 
         self.img=Image(src="profile.png")
         self.imgS = Image(src="senac.png")
