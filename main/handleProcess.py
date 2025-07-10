@@ -19,7 +19,7 @@ def main(page:Page):
         if page.route == "/":
             page.views.append(constructorLogin(page=page))
         elif page.route=="/home":
-            page.views.append(constructorMenu())
+            page.views.append(constructorMenu(page=page))
         elif page.route=="/cadastro":
             page.views.append(constructorCadastro())
 
