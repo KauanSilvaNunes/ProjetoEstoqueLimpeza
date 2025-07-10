@@ -61,4 +61,6 @@ Rogerio Sobral
 Docente no Senac – Unidade Santana
 GitHub: https://github.com/RogerSobral
 
+Kauan Nunes
+GitHub: https://github.com/KauanSilvaNunes
 
