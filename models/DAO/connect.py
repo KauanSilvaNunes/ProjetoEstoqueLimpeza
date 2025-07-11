@@ -21,6 +21,11 @@ def conexao():
         return None
 
 
+def connect():
+    conn= conexao()
+    cursor=conn.cursor()
+
+    return conn, cursor
 
 if __name__=="__main__":
     conn=conexao()

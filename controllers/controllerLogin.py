@@ -1,15 +1,20 @@
 from views.viewLogin import  ViewLogin
 
+
 class ControllerLogin:
 
-    def __init__(self,telaLogin:ViewLogin,page):
+    def __init__(self,telaLogin:ViewLogin,page,autentication):
         self.login=telaLogin.login
         self.password=telaLogin.password
         self.btnEnter=telaLogin.btnEnter
         self.page=page
         self.btnEnter.on_click=self.handleEnter
+        self.autentication=autentication
 
     def handleEnter(self,e):
-        if self.password.value=="1234" and self.login.value=="carlos":
-            print("estou dentro do evento")
+        try:
+            user=self.autentication(self.login,self.password)
+            print(user)
             self.page.go("/home")
+        except Exception as e:
+            print("Erro", e)
